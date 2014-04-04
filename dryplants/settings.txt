@@ -51,8 +51,8 @@ JUNCUS_AT_BEACH_RARITY				=	75		-- percent
 
 
 -- Tall Grass on dirt with grass
-TALL_GRASS_PER_MAPBLOCK				=	4800	-- plants per 80x80x80 nodes (absolute maximum number)
-TALL_GRASS_RARITY					=	67		-- percent
+TALL_GRASS_PER_MAPBLOCK				=	800	-- plants per 80x80x80 nodes (absolute maximum number)(default=4800)
+TALL_GRASS_RARITY					=	67		-- percent (default=67)
 
 
 
@@ -70,6 +70,6 @@ AUTO_ROOF_CORNER 					= 	true
 
 
 -- Jungle Grass settings
-JUNGLEGRASS_PER_MAPBLOCK			=	4800	-- plants per 80x80x80 nodes (absolute maximum number)
+JUNGLEGRASS_PER_MAPBLOCK			=	1800	-- plants per 80x80x80 nodes (absolute maximum number) (default=4800)
 JUNGLEGRASS_RARITY					=	58		-- percent
-JUNGLEGRASS_SPAWNING				=	false	-- jungle grass grows after(!) map generation
+JUNGLEGRASS_SPAWNING				=	false	-- jungle grass grows after(!) map generation (default=false)
