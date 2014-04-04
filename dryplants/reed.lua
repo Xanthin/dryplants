@@ -11,12 +11,18 @@ minetest.register_alias("stairs:slab_wetreed",				"dryplants:wetreed_slab")
 minetest.register_alias("stairs:stair_reed",				"dryplants:reed_roof")
 minetest.register_alias("stairs:slab_reed",					"dryplants:reed_slab")
 
-
+-- Boilerplate to support localized strings if intllib mod is installed.
+local S
+if intllib then
+	S = intllib.Getter()
+else
+	S = function(s) return s end
+end
 -----------------------------------------------------------------------------------------------
 -- Wet Reed
 -----------------------------------------------------------------------------------------------
 minetest.register_node("dryplants:wetreed", {
-	description = "Wet Reed",
+	description = S("Wet Reed"),
 	paramtype = "light",
 	paramtype2 = "facedir",
 	tiles = {"dryplants_reed_wet.png"},
@@ -28,7 +34,7 @@ minetest.register_node("dryplants:wetreed", {
 -- Wet Reed Slab
 -----------------------------------------------------------------------------------------------
 minetest.register_node("dryplants:wetreed_slab", {
-	description = "Wet Reed Slab",
+	description = S("Wet Reed Slab"),
 	drawtype = "nodebox",
 	paramtype = "light",
 	paramtype2 = "facedir",
@@ -49,7 +55,7 @@ minetest.register_node("dryplants:wetreed_slab", {
 -- Wet Reed Roof
 -----------------------------------------------------------------------------------------------
 minetest.register_node("dryplants:wetreed_roof", {
-	description = "Wet Reed Roof",
+	description = S("Wet Reed Roof"),
 	drawtype = "nodebox",
 	paramtype = "light",
 	paramtype2 = "facedir",
@@ -172,7 +178,7 @@ end
 -- Wet Reed Roof Corner
 -----------------------------------------------------------------------------------------------
 minetest.register_node("dryplants:wetreed_roof_corner", {
-	description = "Wet Reed Roof Corner",
+	description = S("Wet Reed Roof Corner"),
 	drawtype = "nodebox",
 	paramtype = "light",
 	paramtype2 = "facedir",
@@ -202,7 +208,7 @@ minetest.register_node("dryplants:wetreed_roof_corner", {
 -- Wet Reed Roof Corner 2
 -----------------------------------------------------------------------------------------------
 minetest.register_node("dryplants:wetreed_roof_corner_2", {
-	description = "Wet Reed Roof Corner 2",
+	description = S("Wet Reed Roof Corner 2"),
 	drawtype = "nodebox",
 	paramtype = "light",
 	paramtype2 = "facedir",
@@ -262,7 +268,7 @@ end
 -- Reed
 -----------------------------------------------------------------------------------------------
 minetest.register_node("dryplants:reed", {
-	description = "Reed",
+	description = S("Reed"),
 	paramtype = "light",
 	paramtype2 = "facedir",
 	tiles = {"dryplants_reed.png"},
@@ -274,7 +280,7 @@ minetest.register_node("dryplants:reed", {
 -- Reed Slab
 -----------------------------------------------------------------------------------------------
 minetest.register_node("dryplants:reed_slab", {
-	description = "Reed Slab",
+	description = S("Reed Slab"),
 	drawtype = "nodebox",
 	paramtype = "light",
 	paramtype2 = "facedir",
@@ -295,7 +301,7 @@ minetest.register_node("dryplants:reed_slab", {
 -- Reed Roof
 -----------------------------------------------------------------------------------------------
 minetest.register_node("dryplants:reed_roof", {
-	description = "Reed Roof",
+	description = S("Reed Roof"),
 	drawtype = "nodebox",
 	paramtype = "light",
 	paramtype2 = "facedir",
@@ -323,7 +329,7 @@ minetest.register_node("dryplants:reed_roof", {
 -- Reed Roof Corner
 -----------------------------------------------------------------------------------------------
 minetest.register_node("dryplants:reed_roof_corner", {
-	description = "Reed Roof Corner",
+	description = S("Reed Roof Corner"),
 	drawtype = "nodebox",
 	paramtype = "light",
 	paramtype2 = "facedir",
@@ -353,7 +359,7 @@ minetest.register_node("dryplants:reed_roof_corner", {
 -- Reed Roof Corner 2
 -----------------------------------------------------------------------------------------------
 minetest.register_node("dryplants:reed_roof_corner_2", {
-	description = "Reed Roof Corner 2",
+	description = S("Reed Roof Corner 2"),
 	drawtype = "nodebox",
 	paramtype = "light",
 	paramtype2 = "facedir",
