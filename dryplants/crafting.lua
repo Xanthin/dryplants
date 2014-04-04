@@ -21,7 +21,7 @@ minetest.register_craft({
 -----------------------------------------------------------------------------------------------
 -- Cut Grass
 -----------------------------------------------------------------------------------------------
--- grass recipes (remove roots)
+--[[ grass recipes (remove roots)
 minetest.register_craft({
 	output = "dryplants:grass",
 	recipe = {
@@ -42,7 +42,7 @@ if minetest.get_modpath("sumpf") ~= nil then
 		}
 	})
 end
-
+]]
 -----------------------------------------------------------------------------------------------
 -- Sickle
 -----------------------------------------------------------------------------------------------
@@ -95,13 +95,14 @@ minetest.register_craft({
 -----------------------------------------------------------------------------------------------
 -- Wet Reed
 -----------------------------------------------------------------------------------------------
-minetest.register_craft({ -- papyrus -> wetreed
+--[[minetest.register_craft({ -- papyrus -> wetreed
 	output = "dryplants:wetreed 2",
 	recipe = {
 		{"default:papyrus","default:papyrus"},
 		{"default:papyrus","default:papyrus"},
 	}
 })
+]]
 minetest.register_craft({ -- reedmace_sapling -> wetreed
 	output = "dryplants:wetreed 2",
 	recipe = {
@@ -258,13 +259,14 @@ end
 -----------------------------------------------------------------------------------------------
 -- Reed
 -----------------------------------------------------------------------------------------------
-minetest.register_craft({ -- hay -> reed
+--[[minetest.register_craft({ -- hay -> reed
 	output = "dryplants:reed 2",
 	recipe = {
 		{"dryplants:hay","dryplants:hay"},
 		{"dryplants:hay","dryplants:hay"},
 	}
 })
+]]
 --cooking
 minetest.register_craft({ -- wetreed -> reed
 	type = "cooking",
