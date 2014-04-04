@@ -1,6 +1,14 @@
 -- Code by VanessaE and Mossmanikin (and maybe some of Ironzorg's Flowers mod code left)
 -- The different sizes of junglegrass used to be part of VanessaE's Plantlife modpack/Junglegrass mod
 
+-- Boilerplate to support localized strings if intllib mod is installed.
+local S
+if intllib then
+	S = intllib.Getter()
+else
+	S = function(s) return s end
+end
+
 -- For compatibility with older stuff
 minetest.register_alias("junglegrass:shortest","dryplants:junglegrass_shortest")
 minetest.register_alias("junglegrass:short"   ,"dryplants:junglegrass_short"   )
@@ -20,7 +28,7 @@ local grasses_list = {
 }
 
 minetest.register_node('dryplants:junglegrass_medium', {
-	description = "Jungle Grass (medium height)",
+	description = S("Jungle Grass (medium height)"),
 	drawtype = 'plantlike',
 	tile_images = { 'dryplants_junglegrass_medium.png' },
 	inventory_image = 'dryplants_junglegrass_medium.png',
@@ -40,7 +48,7 @@ minetest.register_node('dryplants:junglegrass_medium', {
 })
 
 minetest.register_node('dryplants:junglegrass_short', {
-	description = "Jungle Grass (short)",
+	description = S("Jungle Grass (short)"),
 	drawtype = 'plantlike',
 	tile_images = { 'dryplants_junglegrass_short.png' },
 	inventory_image = 'dryplants_junglegrass_short.png',
@@ -59,7 +67,7 @@ minetest.register_node('dryplants:junglegrass_short', {
 })
 
 minetest.register_node('dryplants:junglegrass_shortest', {
-	description = "Jungle Grass (very short)",
+	description = S("Jungle Grass (very short)"),
 	drawtype = 'plantlike',
 	tile_images = { 'dryplants_junglegrass_shortest.png' },
 	inventory_image = 'dryplants_junglegrass_shortest.png',
