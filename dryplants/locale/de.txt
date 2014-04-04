@@ -1,0 +1,34 @@
+# Template
+
+### init.lua ###
+Sickle = Sichel
+Cut Grass = Geschnittenes Gras
+Hay = Heu
+Short Grass = Kurzes Gras
+
+### juncus.lua ###
+Juncus = Binsen
+
+### junglegrass.lua ###
+Jungle Grass (medium height) = Tropengras (mittelhoch)
+Jungle Grass (short) = Tropengras (kurz)
+Jungle Grass (very short) = Tropengras (sehr kurz)
+
+### reed.lua ###
+Wet Reed = Feuchtes Schilfrohr
+Wet Reed Slab = Feuchte Schilfstufe
+Wet Reed Roof = Feuchtes Schilfdach
+Wet Reed Roof Corner = Feuchte Schilfdachecke
+Wet Reed Roof Corner 2 = Feuchte Schilfdachecke 2
+Reed = Schilfrohr
+Reed Slab = Schilfstufe
+Reed Roof = Schilfdach
+Reed Roof Corner = Schilfdachecke
+Reed Roof Corner 2 = Schilfdachecke 2
+
+### reedmace.lua ###
+Reedmace = Rohrkolben
+Reedmace, height: 1 = Rohrkolben, Hoehe: 1
+Reedmace, height: 2 = Rohrkolben, Hoehe: 2
+Reedmace, height: 3 = Rohrkolben, Hoehe: 3
+Reedmace, height: 3 & Spikes = Rohrkolben, Hoehe: 3 & Borsten
