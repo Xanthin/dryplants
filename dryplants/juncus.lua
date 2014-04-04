@@ -8,6 +8,13 @@
 -- Contains code from: 		plants_lib
 -- Looked at code from:		default			
 -----------------------------------------------------------------------------------------------
+-- Boilerplate to support localized strings if intllib mod is installed.
+local S
+if intllib then
+	S = intllib.Getter()
+else
+	S = function(s) return s end
+end
 
 abstract_dryplants.grow_juncus = function(pos)
 	local juncus_type = math.random(2,3)
@@ -23,7 +30,7 @@ abstract_dryplants.grow_juncus = function(pos)
 end
 
 minetest.register_node("dryplants:juncus", {
-	description = "Juncus",
+	description = S("Juncus"),
 	drawtype = "plantlike",
 	visual_scale = 2,
 	paramtype = "light",
@@ -58,7 +65,7 @@ minetest.register_node("dryplants:juncus", {
 	end,
 })
 minetest.register_node("dryplants:juncus_02", {
-	description = "Juncus",
+	description = S("Juncus"),
 	drawtype = "plantlike",
 	visual_scale = 2,
 	paramtype = "light",
