@@ -1,0 +1,34 @@
+# Template
+
+### init.lua ###
+Sickle = 
+Cut Grass = 
+Hay = 
+Short Grass = 
+
+### juncus.lua ###
+Juncus = 
+
+### junglegrass.lua ###
+Jungle Grass (medium height) = 
+Jungle Grass (short) = 
+Jungle Grass (very short) = 
+
+### reed.lua ###
+Wet Reed = 
+Wet Reed Slab = 
+Wet Reed Roof = 
+Wet Reed Roof Corner = 
+Wet Reed Roof Corner 2 = 
+Reed = 
+Reed Slab = 
+Reed Roof = 
+Reed Roof Corner = 
+Reed Roof Corner 2 = 
+
+### reedmace.lua ###
+Reedmace = 
+Reedmace, height: 1 = 
+Reedmace, height: 2 = 
+Reedmace, height: 3 = 
+Reedmace, height: 3 & Spikes = 
